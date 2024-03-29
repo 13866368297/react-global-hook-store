@@ -1,5 +1,5 @@
 import { useUserStore } from './store';
-import { Prvoider } from 'react-global-hook-store';
+import { Provider } from 'react-global-hook-store';
 
 function Input() {
   const setUser = useUserStore((state) => state.setUser);
@@ -33,12 +33,12 @@ function Result4() {
 export default function () {
   console.log('...');
   return (
-    <Prvoider>
+    <Provider>
       <Input />
       <Result1 />
       <Result2 />
       <Result3 />
       <Result4 />
-    </Prvoider>
+    </Provider>
   );
 }
